@@ -1,0 +1,1 @@
+type ('a, 'b) gtree = Empty | Node (x, ('a, 'b) gtree list)

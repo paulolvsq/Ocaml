@@ -1,0 +1,13 @@
+let char_list_of_string str =
+  let rec aux i acc =
+    match i with
+    | -1 -> acc
+    | _ -> aux (i-1) (str.[i] :: acc)
+  in aux (String.length str - 1) []
+
+let compare_char a b = 
+  let a_char = int_of_char a in
+  let b_char = int_of_char b in
+  if a = b then 0 
+  else if a < b then -1 
+  else if a > b then 1

@@ -1,0 +1,5 @@
+(* 1. type 'a btree = Empty | Node of 'a * 'a btree * 'a btree *)
+let rec taille_arbre arbre = 
+  match b with
+    | Empty -> 0
+    | Node (x, g, d) -> 1 + taille g + taille d
