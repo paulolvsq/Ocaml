@@ -1,0 +1,5 @@
+lancer ocaml dans le terminal avec un fichier :
+       lancer ocaml
+       utiliser la commande : #use "fichier.ml";;
+       on peut lancer les fonctions du fichier.ml
+       fonctionne un peu comme un script python 
