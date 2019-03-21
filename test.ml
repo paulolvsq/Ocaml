@@ -9,7 +9,7 @@ let puissance x n =
     if n = 0 then acc
     else loop (n-1) (acc*x) in loop n 1
 
-xlet somme_des_chiffres n = 
+let somme_des_chiffres n = 
   let rec loop n acc = 
     if (n/10) = 0 then acc+n
     else loop (n/10) (acc+(n mod 10)) in loop n 0
@@ -136,14 +136,14 @@ let pgcd x y =
     if (x mod y = 0) then y
     else loop y (x mod y) in loop x y
 
-let note etud corr = 
+(*let note etud corr = 
   let rec loop etud corr acc = 
     match etud, corr with 
       | [], [] -> acc
       | h1::t1, h2::t2 -> if h1 = h2 then loop t1 t2 (acc+1)
 	else loop t1 t2 acc in if List.length (etud) <> List.length (corr) then failwith "taille incorrecte"
 	  else loop etud corr 0
-
+*)
 let valide etud corr = 
   let res = note etud corr in 
   res >= ((List.length corr)/2)
